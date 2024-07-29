@@ -1,0 +1,22 @@
+<!--
+ This ribbon xml gets merged with any others loaded by PyXLL via
+ the pyxll:ribbon entry point.
+ -->
+ <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" loadImage="pyxll.load_image">
+    <ribbon>
+    </ribbon>
+    <contextMenus>
+        <!-- Normal worksheet cells -->
+        <contextMenu idMso="ContextMenuCell">
+            <button id="PyXLLHvExplorer" label="hvPlot Explorer"
+                onAction="pyxll_holoviz.ribbon.actions.hvplot_explorer"
+                image="pyxll_holoviz.ribbon:hvplot.png"/>
+        </contextMenu>
+        <!-- Tables -->
+        <contextMenu idMso="ContextMenuListRange">
+            <button id="PyXLLHvExplorer2" label="hvPlot Explorer"
+                onAction="pyxll_holoviz.ribbon.actions.hvplot_explorer"
+                image="pyxll_holoviz.ribbon:hvplot.png"/>
+        </contextMenu>
+   </contextMenus>
+</customUI>

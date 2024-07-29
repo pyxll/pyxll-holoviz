@@ -1,0 +1,27 @@
+[project]
+name = "pyxll-holoviz"
+version = "0.0.1"
+dependencies = [
+    "pyxll",
+    "hvplot",
+    "holoviews",
+    "panel",
+    "tornado",
+    "pywin32"
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools"
+]
+
+[project.entry-points."pyxll"]
+modules = "pyxll_holoviz.pyxll:modules"
+ribbon = "pyxll_holoviz.pyxll:ribbon"
+
+[tool.setuptools.package-data]
+"pyxll_holoviz.ribbon" = [
+    "*.xml", 
+    "*.png"
+]

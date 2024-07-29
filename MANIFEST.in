@@ -1,0 +1,2 @@
+include pyxll_holoviz/ribbon/*.xml
+include pyxll_holoviz/ribbon/*.png
