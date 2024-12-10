@@ -1,8 +1,18 @@
 [project]
 name = "pyxll-holoviz"
-version = "0.0.1"
+version = "1.0.0"
+authors = [
+  { name="Tony Roberts", email="tony@pyxll.com" },
+]
+description = "PyXLL extension for Holoviz charts and panels"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
 dependencies = [
-    "pyxll",
+    "pyxll >= 5.9.0",
     "hvplot",
     "holoviews",
     "panel",
